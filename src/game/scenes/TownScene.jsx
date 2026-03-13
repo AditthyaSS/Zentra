@@ -7,6 +7,7 @@ import Tree from '../world/Tree'
 import Fence from '../world/Fence'
 import Lamp from '../world/Lamp'
 import AnimalController from '../animals/AnimalController'
+import { FlowerPatch } from '../world/FlowerPatch'
 
 const TREE_POSITIONS = [
   [-8, 0, -7], [-10, 0, -3], [8, 0, -6], [10, 0, -1],
@@ -70,6 +71,20 @@ export default function TownScene() {
 
       {/* Animals */}
       <AnimalController />
+
+      {/* ── FLOWER PATCHES ── */}
+      <FlowerPatch position={[2, 0, 8]} count={5} spread={0.7} />
+      <FlowerPatch position={[-2, 0, 8]} count={6} spread={0.8} />
+      <FlowerPatch position={[6, 0, 6]} count={4} spread={0.6} />
+      <FlowerPatch position={[-6, 0, 6]} count={5} spread={0.7} />
+      <FlowerPatch position={[10, 0, 4]} count={7} spread={0.9} />
+      <FlowerPatch position={[-10, 0, 4]} count={5} spread={0.8} />
+      <FlowerPatch position={[4, 0, 10]} count={6} spread={0.8} />
+      <FlowerPatch position={[-4, 0, 10]} count={5} spread={0.7} />
+      <FlowerPatch position={[0, 0, 12]} count={8} spread={1.0} />
+      <FlowerPatch position={[-8, 0, 8]} count={4} spread={0.6} />
+      <FlowerPatch position={[8, 0, 8]} count={5} spread={0.7} />
+
     </group>
   )
 }
